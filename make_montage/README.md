@@ -51,6 +51,8 @@ Example of usage:
     -argparse: pip install argparse
 
 ref.:
+
     - Python CLI: https://docs.python.org/3/howto/argparse.html
+    
     - https://www.geeksforgeeks.org/how-to-subtract-two-images-using-python-opencv/
 ~
