@@ -179,18 +179,23 @@ def make_montage(dict_tif, dict_filenames, lst_subfolders):
            
             arr_img= ff_normalize(dict_tif["Data"][i], dict_tif["WF"][i], dict_tif["DF"][i]) #np.divide(a,b)
 
-            
         else: #don't normalize    
         
             arr_img=dict_tif["Data"][i]
             
         #sort images 
+        #(a) assuming a four 2-frame cameras and the sequence is: 
+        #   C1-frame1, C2-frame1, C3-frame1, C4-frame1, C1-frame2, C2-frame2, C3-frame2, C4-frame2 
         if not i%2: #if odd
             plt.subplot(2, int(no_imgs/2), int((i+2)/2))
-            
-            
+        
         else: #if even
             plt.subplot(2, int(no_imgs/2), int(4+(i+2)/2))
+        #End of a four 2-frame cameras-------------------------------------------------------------
+
+        #(b) for a normal sequential images, comment the above block and replace it with:
+        #plt.subplot(2, int(no_imgs/2), int(i+1))
+        #End of images-----------------------------------------------------------------------------
             
         plt.imshow(arr_img, cmap='gray', vmin=args.vmin, vmax=args.vmax)
         
