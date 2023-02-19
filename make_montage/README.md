@@ -26,7 +26,7 @@ or<br>
 `python make_montage_v1-0.py --help`<br>
 
     
-Example of usage:
+Example of usage:<br>
 (a)<br>
 - To generate flat field normalized images, place the appropriate images into the WF, DF, and Data subfolders.
 - On an anaconda prompt with the appropiate modules installed, type:
