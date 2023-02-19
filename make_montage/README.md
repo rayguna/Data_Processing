@@ -28,7 +28,7 @@ or<br>
     
 Example of usage:
 (a)
-- To generate flat field normalized images, place the appropriate images into wf, df, and data subfolders.
+- To generate flat field normalized images, place the appropriate images into the WF, DF, and Data subfolders.
 - On an anaconda prompt with the appropiate modules installed, type:
     `
     python make_montage_v1-0.py --normalize True --vmin 0 --vmax 1.5 --title_fontsize 8
