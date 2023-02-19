@@ -36,14 +36,14 @@ Example of usage:
     (a)
     -To generate flat field normalized images, place the appropriate images into wf, df, and data subfolders.
     -On an anaconda prompt with the appropiate modules installed, type: 
-        python make_montage_v1-0.py --normalize True --vmin 0 --vmax 1.5 --title_fontsize 8
+        python make_montage.py --normalize True --vmin 0 --vmax 1.5 --title_fontsize 8
     -When prompted, select the main folder in which wf, df, and data subfolders reside and click "Choose".
     -Adjust the vmin and vmax to vary the contrast.
     
     (b)
     -Alternatively, to simply view the raw images, simply place the images within the main folder.
     -On an anaconda prompt with the appropiate modules installed, type: 
-        python make_montage_v1-0.py --normalize False --vmin 0 --vmax 4000 --title_fontsize 8
+        python make_montage.py --normalize False --vmin 0 --vmax 4000 --title_fontsize 8
     -When prompted, select the main folder containing the images and click "Choose".
     -Adjust the vmin and vmax to vary the contrast.
     
@@ -51,6 +51,7 @@ Example of usage:
     -matplotlib: pip install matplotlib
     -numpy: pip install numpy
     -easygui_qt: pip install easygui_qt
+    -pyqt5: pip install PyQt5
     -glob: python standard library (built-in)
     -argparse: pip install argparse
 
