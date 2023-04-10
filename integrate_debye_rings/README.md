@@ -133,7 +133,7 @@ pyFAIs.create_a_montage()
 Output:
 <img src="Faux_Si_Montage.png"></img>
 
-E.g.1:
+E.g.2:
 Montage with labels and masks.
 
 ```
