@@ -76,7 +76,7 @@ As seen in the above, the poni calibration file consists of the following parame
 - Wavelength=X-ray beam wavelength in m  
 
 **Prepare edf:**
-Mask out unwanted regions on the image and save the mask to an edf file (e.g., using pyFAI or Dioptas).
+Mask out unwanted regions on the image and save the mask as an edf file (e.g., using pyFAI or Dioptas).
 
 <h2>C. Integrate Debye Ring Image(s)<a id="3"></a></h2>
 
