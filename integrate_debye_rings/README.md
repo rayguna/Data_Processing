@@ -49,7 +49,7 @@ The raw Debye ring images are available in tif files. Make sure to apply distort
 **Prepare poni:** 
 Use a distortion-corrected tif image of a standard Debye material (e.g., polycrystalline Si or CeO2) to generate the poni calibration file using (e.g., pyFAI or Dioptas).
 
-A poni file can be viewed and edited using a notepad and have the following format:
+A poni file can be viewed and edited using a notepad and has the following format:
 
 ```
 # Nota: C-Order, 1 refers to the Y axis, 2 to the X axis 
