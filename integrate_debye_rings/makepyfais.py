@@ -2,6 +2,9 @@ import glob
 import pyFAI, fabio
 import matplotlib.pyplot as plt
 
+import makepyfais
+
+
 class MakePyFAIs:
 
     def __init__(self, poni_path, lst_labels=[]):
@@ -193,3 +196,27 @@ class MakePyFAIs:
         
         print("Done!")
         print("")
+
+def make_montage(poni_path, img_path, lst_labels=[], mask_path=None):
+    """Generate a montage showing tif images and the corresponding
+        integrated XRD patterns.
+
+        Inputs:
+        - poni_path (dir): a directory path where poni calibration
+            files (.tif) are located - required
+        - lst_labels (list): a list of keywords to distinguish one file 
+            from another (e.g., ["C1", "C2", "C3", "C4"])
+        - img_path (dir): a directory path where image files (.tif)
+            are located - required
+        - mask_path (dir): a directory path where mask files (.edf) 
+            are located - optional
+    """
+
+    #make PyFAIs object. Specify labels as a list (optional)
+    pyFAIs=makepyfais.MakePyFAIs(poni_path, lst_labels)
+
+    #apply images and mask (optional)
+    dict_XRDs = pyFAIs.integrate(img_path, mask_path)
+
+    #Create a montage
+    pyFAIs.create_a_montage()
